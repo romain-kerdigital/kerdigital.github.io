@@ -1,1 +1,21 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>WordPress France</title>
+</head>
+<body>
+  <header>
+    <h1>Hello World</h1>
+    <nav></nav>
+  </header>
+
+  <main>
+    {{content}}
+  </main>
+
+  <footer>
+    <p>©</p>
+  </footer>
+</body>
+</html>
