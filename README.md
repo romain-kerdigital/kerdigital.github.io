@@ -1,22 +1,25 @@
-# Base
+# Urban
 
-Knowledge base template for Jekyll. Browse through a [live demo](https://orange-ape.cloudvent.net/).
+Web Agency themed business template for Jekyll. Browse through a [live demo](https://teal-worm.cloudvent.net/).
+Increase the web presence of your agency with this configurable theme.
 
-![Base template screenshot](images/_screenshot.png)
+![Urban template screenshot](images/_screenshot.png)
 
-Base was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
+Urban was made by [CloudCannon](https://cloudcannon.com/), the Cloud CMS for Jekyll.
 
 Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
 
 ## Features
 
-* Tutorials organised by category
-* Two types of tutorials - text and video
-* Ability to have a "tutorial series"
-* FAQ section
-* Disqus comments
-* Sticky sidebar for main headings in tutorials
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
+* Contact form
+* Pre-built pages
+* Pre-styled components
+* Blog with pagination
+* Post category pages
+* Disqus comments for posts
+* Staff and author system
+* Configurable footer
+* Optimised for editing in [CloudCannon](https://cloudcannon.com/)
 * RSS/Atom feed
 * SEO tags
 * Google Analytics
@@ -24,14 +27,14 @@ Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Ac
 ## Setup
 
 1. Add your site and author details in `_config.yml`.
-2. Add your Google Analytics, Disqus and MailChimp keys to `_config.yml`.
+2. Add your Google Analytics and Disqus keys to `_config.yml`.
 3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
 
 ## Develop
 
-Base was built with [Jekyll](http://jekyllrb.com/) version 3.4.3, but should support newer versions as well.
+Urban was built with [Jekyll](https://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
 
-Install the dependencies with [Bundler](http://bundler.io/):
+Install the dependencies with [Bundler](https://bundler.io/):
 
 ~~~bash
 $ bundle install
@@ -45,32 +48,31 @@ $ bundle exec jekyll serve
 
 ## Editing
 
-Base is already optimised for adding, updating and removing tutorials, navigation, footer and FAQ information in CloudCannon.
-
-The sticky sidebar in tutorials in populated by pulling out `<h2>` elements from the content.
+Urban is already optimised for adding, updating and removing pages, staff, advice, company details and footer elements in [CloudCannon](https://app.cloudcannon.com/).
 
 ### Posts
 
 * Add, update or remove a post in the *Posts* collection.
-* The tutorials page is organised by categories.
+* The **Staff Author** field links to members in the **Staff** collection.
+* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
 * Change the defaults when new posts are created in `_posts/_defaults.md`.
 
-### Post Series
-To create a new series:
+### Contact Form
 
-* Add a new document to the `sets` collection.
-* Set the `title` and `description`.
+* Preconfigured to work with [CloudCannon](https://app.cloudcannon.com/), but easily changed to another provider (e.g. [FormSpree](https://formspree.io/)).
+* Sends email to the address listed in company details.
 
-To add a tutorial/post to a series:
-* Add a `set` field to the tutorial front matter which points to the file name of the desired set without the `.md` extention. e.g. If I have a set at `_sets/getting-started.md` I would use this in my tutorial front matter: `set: getting-started`.
-* Add a `set_order` field to the tutorial front matter and specify a number. This is the tutorials order in the set.
+### Staff
 
-### Navigation
-
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Navigation* section.
+* Reused around the site to save multiple editing locations.
+* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
 
 ### Footer
 
 * Exposed as a data file to give clients better access.
 * Set in the *Data* / *Footer* section.
+
+### Company details
+
+* Reused around the site to save multiple editing locations.
+* Set in the *Data* / *Company* section.

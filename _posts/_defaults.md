@@ -1,7 +1,7 @@
 ---
-date:
 title:
 categories:
-description:
-type: Document
+author_staff_member:
+show_comments: true
+date:
 ---

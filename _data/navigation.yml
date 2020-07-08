@@ -1,8 +1,9 @@
-- name: Tutorials
-  link: /
-- name: Videos
-  link: /videos/
-- name: FAQ
-  link: /faq/
-- name: Test
-  link: 'https://supeducation.org/'
+links:
+- name: Portfolio
+  link: /portfolio/
+- name: Blog
+  link: /blog/
+- name: About
+  link: /about/
+- name: Contact
+  link: /contact/
